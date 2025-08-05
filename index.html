@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог смартфонов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="brands-filter">
+        <div class="brands-scroll-container">
+            <!-- Бренды будут добавляться динамически -->
+        </div>
+    </div>
+
+    <div id="products-container">
+        <!-- Товары будут добавляться динамически -->
+    </div>
+
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="quick-view-content">
+            <span class="close-quick-view">&times;</span>
+            <div class="quick-view-image-container">
+                <img src="" alt="" id="quickViewImage">
+            </div>
+            <div class="quick-view-details">
+                <h3 id="quickViewTitle"></h3>
+                <p id="quickViewDescription"></p>
+                <div class="price-container" id="quickViewPrice"></div>
+                <button class="add-to-cart-btn quick-view-cart-btn">
+                    <i class="fas fa-shopping-cart"></i> Добавить в корзину
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <button id="backToTop" class="back-to-top" title="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
